@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.galerie{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.galerie img{
+    width: 100%;
+}
+
+/* Modale */
+.modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal.show{
+    display: initial;
+}
+
+.modal-content{
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal-content img{
+    width: 100%;
+}
+
+.close{
+    color: white;
+    font-size: 2em;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
